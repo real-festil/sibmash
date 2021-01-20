@@ -1,0 +1,28 @@
+.tabs {
+  margin: 69px 0;
+
+  &Tab {
+    background: linear-gradient(
+      90deg,
+      rgba(46, 46, 46, 1) 0%,
+      rgba(98, 98, 98, 1) 100%
+    );
+    margin-bottom: 30px;
+    padding: 0 50px;
+
+    &Header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 32px;
+      cursor: pointer;
+    }
+
+    &Description {
+      font-size: 20px;
+      line-height: 30px;
+      max-width: 70%;
+      padding-bottom: 40px;
+    }
+  }
+}

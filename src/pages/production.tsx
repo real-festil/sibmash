@@ -1,12 +1,10 @@
 import React from 'react';
 import MainLayout from '@/layouts/MainLayout';
-import PhotoGallery from '@/components/PhotoGallery';
-import Products from '@/components/Products';
+import ProdTabs from '@/components/ProdTabs';
 
 const Home: React.FC = () => (
   <MainLayout title="ООО СИБМАШ">
-    <PhotoGallery />
-    <Products />
+    <ProdTabs />
   </MainLayout>
 );
 

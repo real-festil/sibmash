@@ -1,0 +1,50 @@
+.header {
+  background: #2e2e2e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #009898;
+  padding: 30px 55px;
+
+  &Logo {
+    width: 155px;
+    cursor: pointer;
+  }
+
+  &Title {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  &Phone {
+    color: #009898 !important;
+    text-decoration: none;
+    font-size: 20px;
+  }
+}
+
+.navigation {
+  background: #2e2e2e;
+  border-top: 1px solid #fff;
+  color: #fff;
+  font-weight: normal;
+  padding: 0px 60px 10px;
+
+  &List {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+    &Link {
+      font-size: 18px;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

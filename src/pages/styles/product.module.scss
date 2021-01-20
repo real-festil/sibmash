@@ -1,0 +1,15 @@
+.product {
+  padding: 0 165px;
+  min-height: 50vh;
+
+  &Title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 42px;
+  }
+
+  &Desc {
+    font-size: 32px;
+    margin-bottom: 140px;
+  }
+}
