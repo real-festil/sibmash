@@ -24,5 +24,21 @@
       max-width: 70%;
       padding-bottom: 40px;
     }
+    &Vse {
+      display: flex;
+    }
+    &Photo {
+      display: flex;
+      flex-direction: column;
+      img {
+        &:first-child {
+          margin-bottom: 61px;
+        }
+        margin-left: 269px;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 50px;
+      }
+    }
   }
 }
