@@ -150,24 +150,22 @@ h3 {
   position: absolute;
   top: 4px;
   left: 0;
-  height: 15px;
-  width: 15px;
+  height: 14px;
+  width: 14px;
   background: #c4c4c4;
   border-radius: 50%;
 }
-.checkmark:after {
+.checkmark::after {
   content: '';
   position: absolute;
   display: none;
-}
-.position:checked ~ .checkmark:after {
-  display: block;
-}
-.input-wrapper .checkmark:after {
-  top: 9px;
-  left: 9px;
+  top: 3.1px;
+  left: 3.1px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: white;
+  background: #313131;
+}
+.position:checked ~ .checkmark::after {
+  display: block;
 }

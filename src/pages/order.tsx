@@ -3,98 +3,6 @@ import React from 'react';
 import MainLayout from '@/layouts/MainLayout';
 import { title } from 'process';
 
-// const About = () => (
-//   <MainLayout title="Заказ">
-//     <h3 className="order">Оформление заказа</h3>
-//     <div className="body">
-//       <div className="form_group">
-//         <input className="form_input" />
-//         <label className="form_label">Введите имя:</label>
-//       </div>
-//       <div className="form_group">
-//         <input className="form_input" />
-//         <label className="form_label">Адресс эл.почты:</label>
-//       </div>
-//     </div>
-
-//     <div className="order1">
-//       <div className="bblock">
-//         <p>
-//           <input checked type="radio" name="position" value="lager" />
-//           Шаровые краны
-//         </p>
-//         <p>
-//           <input checked type="radio" name="position" value="lager" />
-//           Заглушки
-//         </p>
-//         <p>
-//           <input checked type="radio" name="position" value="lager" />
-//           Переходы
-//         </p>
-//       </div>
-
-//       <br />
-//       <div className="bblock2">
-//         <p>
-//           <input checked type="radio" name="position2" value="lager" />
-//           Фланцы
-//         </p>
-//         <p>
-//           <input checked type="radio" name="position2" value="lager" />
-//           Отводы
-//         </p>
-//         <p>
-//           <input checked type="radio" name="position2" value="lager" />
-//           Поковки
-//         </p>
-//       </div>
-
-//       <br />
-//       <div className="bblock3">
-//         <p>
-//           <input checked type="radio" name="position2" value="lager" />
-//           Опоры
-//         </p>
-//         <p>
-//           <input checked type="radio" name="position2" value="lager" />
-//           Днища
-//         </p>
-//         <p>
-//           <input checked type="radio" name="position2" value="lager" />
-//           Прокладки
-//         </p>
-//       </div>
-//       <br />
-//       <div className="bblock4">
-//         <p>
-//           <input checked type="radio" name="position2" value="lager" />
-//           Нефтепромысловое оборудование
-//         </p>
-//         <p>
-//           <input checked type="radio" name="position2" value="lager" />
-//           Монтажные катушки
-//         </p>
-//         <p>
-//           <input checked type="radio" name="position2" value="lager" />
-//           Тройники
-//         </p>
-//       </div>
-//     </div>
-//     <p>
-//       Дополнительная
-//       <br /> информация:
-//     </p>
-//     <div className="textaria">
-//       <textarea className="textaria1" placeholder="" />
-//     </div>
-//     <div className="button_1">
-//       <button className="button" type="submit">
-//         Отправить
-//       </button>
-//     </div>
-//   </MainLayout>
-// );
-// export default About;
 const inputs = [
   {
     id: 0,
@@ -161,11 +69,11 @@ const About = () => (
       </div>
       <div className="tabl">
         {inputs.map((el) => (
-          <div key={el.id} className="input-wrapper">
+          <label key={el.id} className="input-wrapper">
             <input type="radio" className="position" value="lager" />
             <span className="checkmark" />
             <label>{el.text}</label>
-          </div>
+          </label>
         ))}
       </div>
       <div className="area">
