@@ -2,4 +2,172 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  font-size: 26px;
+}
+.wrapper-about {
+  margin-left: 95px;
+}
+.name {
+  font-size: 26px;
+}
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul li :before {
+  content: '-';
+  position: relative;
+
+  left: 5px;
+}
+h3 {
+  font-size: 32px;
+  font-weight: 400;
+  padding: 70;
+}
+.about-text {
+  margin-bottom: 35px;
+}
+.mail {
+  margin-bottom: 45px;
+}
+.Contacts {
+  margin-left: 76px;
+  margin-bottom: 45px;
+  margin-top: 68px;
+}
+.maps {
+  margin-left: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.position {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.order_all {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.order {
+}
+.input_all {
+  margin-top: 117px;
+  border: none;
+
+  justify-content: center;
+}
+.form_input {
+  width: 550px;
+  height: 30px;
+  margin-left: 25px;
+
+  background: #c4c4c4;
+  border-radius: 10px;
+  border: none;
+}
+
+.input_pole {
+  display: flex;
+  p {
+    margin: 0;
+  }
+  flex-direction: row-reverse;
+
+  justify-content: flex-start;
+
+  padding: 20px;
+}
+
+.tabl {
+  width: 80%;
+  height: 230px;
+  margin-top: 99px;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pilar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 99px;
+  margin: 98px;
+}
+.textaria {
+  width: 550px;
+  height: 200px;
+  margin-left: 25px;
+
+  background: #c4c4c4;
+  border-radius: 10px;
+  resize: vertical;
+}
+.button {
+  justify-content: center;
+  margin-top: 52px;
+  margin-bottom: 51px;
+  display: inline-block;
+  position: relative;
+  color: #fafafa;
+  border: none;
+
+  width: 200px;
+  height: 30px;
+
+  background: #313131;
+  border-radius: 10px;
+}
+.input-wrapper {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  margin-left: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-left: 100px;
+}
+
+.area {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.checkmark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background: #c4c4c4;
+  border-radius: 50%;
+}
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.position:checked ~ .checkmark:after {
+  display: block;
+}
+.input-wrapper .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }

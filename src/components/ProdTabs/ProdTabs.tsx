@@ -14,6 +14,8 @@ const tabs = [
     МАРКИ СТАЛИ
     Изготавливаем продукцию методом свободной ковки и штамповки из стали 10-
     60, 09Г2С, 30ХМА, 20Х13, 12Х18Н10Т, 10Х17Н13М2Т, 12Х1МФ и др.`,
+    image1: `/images/kuz.jpg`,
+    image2: `/images/kuz1.jpg`,
   },
   {
     id: 1,
@@ -23,6 +25,8 @@ const tabs = [
     (ЦЭШЛ). Заготовки, полученные методом ЦЭШЛ не уступают по своим
     характеристикам поковке и сортовому прокату, что подтверждают
     многочисленные исследования независимых лабораторий.`,
+    image1: `/images/lit.jpg`,
+    image2: `/images/lit1.jpg`,
   },
   {
     id: 2,
@@ -31,6 +35,8 @@ const tabs = [
     станках токарной и сверлильной групп. Токарно-винторезные и карусельные
     станки с максимальным диаметром обработки 3500 мм, а так же радиально-
     сверлильные станки.`,
+    image1: `/images/mex.jpg`,
+    image2: `/images/mex1.jpg`,
   },
   {
     id: 3,
@@ -43,6 +49,8 @@ const tabs = [
     контроль величины зерна
     стойкость против межкристаллитной коррозии
     капиллярный контроль`,
+    image1: `/images/otk.jpg`,
+    image2: `/images/otk1.jpg`,
   },
   {
     id: 4,
@@ -51,6 +59,8 @@ const tabs = [
     машиностроение» постоянно пополняет склад готовой продукции,
     пользующейся наибольшим спросом. Со клада осуществляется выдача
     и погрузка на транспорт потребителей.`,
+    image1: `/images/sklad.jpg`,
+    image2: `/images/sklad1.jpg`,
   },
   {
     id: 5,
@@ -66,6 +76,8 @@ const tabs = [
     складывается из времени собственного нагрева до заданной
     температуры и времени выдержки при этой температуре. Время
     выдержки зависит от скорости протекания фазовых превращений.`,
+    image1: `/images/nagrev.jpg`,
+    image2: `/images/nagrev1.jpg`,
   },
 ];
 
@@ -85,7 +97,13 @@ const ProdTabs = () => {
             {tab.id === openTab ? <ArrowUp /> : <ArrowDown />}
           </div>
           {tab.id === openTab && (
-            <div className={styles.tabsTabDescription}>{tab.description}</div>
+            <div className={styles.tabsTabVse}>
+              <div className={styles.tabsTabDescription}>{tab.description}</div>
+              <div className={styles.tabsTabPhoto}>
+                <img src={tab.image1} />
+                <img src={tab.image2} />
+              </div>
+            </div>
           )}
         </div>
       ))}
