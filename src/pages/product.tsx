@@ -12,8 +12,8 @@ const production = [
                   Катушки монтажные состоят из отрезка трубы и фланцев с каждой стороны.
                   ООО «Сибмаш» изготавливает монтажные катушки в соответствии с российскими и
                   международными стандартами.`,
-    image1: `/images/unnamed (1).jpg`,
-    image2: `/images/Forged-Ring.jpg`,
+    image1: `/images/katushki/1.jpg`,
+    image2: `/images/katushki/2.jpg`,
   },
 
   {
@@ -26,8 +26,8 @@ const production = [
     производстве.
     ООО «Сибмаш» изготавливает днища в соответствии с российскими и международными
     стандартами.`,
-    image1: `/images/dnisha1.jpg`,
-    image2: `/images/dnisha2.jpg`,
+    image1: `/images/dnisha/1.jpg`,
+    image2: `/images/dnisha/2.jpg`,
   },
   {
     id: `opory`,
@@ -37,8 +37,8 @@ const production = [
     распределяется по несущим конструкциям или же передаётся почве.
     ООО «Сибмаш» изготавливает опоры в соответствии с российскими и международными
     стандартами.`,
-    image1: `/images/opori.jpg`,
-    image2: `/images/opori1.jpg`,
+    image1: `/images/opory/1.jpg`,
+    image2: `/images/opory/2.jpg`,
   },
   {
     id: `zaglushki`,
@@ -47,8 +47,8 @@ const production = [
     конструкциях различных емкостей и теплообменников.
     ООО «Сибмаш» изготавливает заглушки в соответствии с российскими и международными
     стандартами.`,
-    image1: `/images/zagl.jpg`,
-    image2: `/images/zagl1.jpg`,
+    image1: `/images/zagl/1.jpg`,
+    image2: `/images/zagl/2.jpg`,
   },
   {
     id: `neft`,
@@ -58,8 +58,8 @@ const production = [
     ООО «Сибмаш» изготавливает манифольды противовыбросовые и буровые (манифольдные
     линии) в различных вариантах по типу соединений: фланцы и фланцевые соединения (проходные,
     глухие, резьбовые, под приварку), бугельные, быстроразъемные соединения (БРС).`,
-    image1: `/images/neft.jpg`,
-    image2: `/images/neft1.jpg`,
+    image1: `/images/neft/1.jpeg`,
+    image2: `/images/neft/2.jpg`,
   },
   {
     id: `otvody`,
@@ -69,8 +69,8 @@ const production = [
     отводы делятся на крутоизогнутые и гнутые.
     ООО «Сибмаш» изготавливает отводы в соответствии с российскими и международными
     стандартами.`,
-    image1: `/images/otvod.jpg`,
-    image2: `/images/otvod1.jpg`,
+    image1: `/images/otvody/1.jpg`,
+    image2: `/images/otvody/2.jpg`,
   },
   {
     id: `perexody`,
@@ -80,8 +80,8 @@ const production = [
     предприятиях нефтяной, газовой и химической промышленности.
     ООО «Сибмаш» изготавливает концентрические переходы в соответствии с российскими и
     международными стандартами.`,
-    image1: `/images/perehod.jpg`,
-    image2: `/images/perehod1.jpg`,
+    image1: `/images/perexody/1.jpg`,
+    image2: `/images/perexody/2.jpg`,
   },
   {
     id: `pokovky`,
@@ -94,8 +94,8 @@ const production = [
       различных деталей.
       ООО «Сибмаш» изготавливает поковки в соответствии с российскими и международными
       стандартами.`,
-    image1: `/images/pokovka.jpg`,
-    image2: `/images/pokovka1.jpg`,
+    image1: `/images/pokovki/1.jpg`,
+    image2: `/images/pokovki/2.jpeg`,
   },
   {
     id: `prokladki`,
@@ -106,8 +106,8 @@ const production = [
     упругостью, герметичностью зазоров при смене температурного режима или давления. ООО
     «Сибмаш» изготавливает металлические прокладки в соответствии с российскими и
     международными стандартами.`,
-    image1: `/images/prokladka.jpg`,
-    image2: `/images/prokladka1.jpg`,
+    image1: `/images/prokladki/1.jpg`,
+    image2: `/images/prokladki/2.jpg`,
   },
   {
     id: `troyniki`,
@@ -116,8 +116,8 @@ const production = [
     трубопроводу боковых ответвлений.
     ООО «Сибмаш» изготавливает тройники в соответствии с российскими и международными
     стандартами.`,
-    image1: `/images/troyniki.jpg`,
-    image2: `/images/troyniki1.jpg`,
+    image1: `/images/troyniki/1.jpg`,
+    image2: `/images/troyniki/2.jpg`,
   },
   {
     id: `flancy`,
@@ -126,8 +126,8 @@ const production = [
     обеспечения, систем трубопроводного транспорта, обеспечивающий простоту монтажа и ремонта.
     ООО «Сибмаш» изготавливает фланцы в соответствии с российскими и международными
     стандартами.`,
-    image1: `/images/flan.jpg`,
-    image2: `/images/flan1.jpg`,
+    image1: `/images/flancy/1.jpg`,
+    image2: `/images/flancy/2.jpg`,
   },
   {
     id: `reshetki`,
@@ -137,8 +137,8 @@ const production = [
     пространство от межтрубного.
     ООО «Сибмаш» изготавливает трубные решетки в соответствии с российскими и
     международными стандартами.`,
-    image1: `/images/resh.png`,
-    image2: `/images/resh1.png`,
+    image1: `/images/reshetki/1.png`,
+    image2: `/images/reshetki/2.png`,
   },
 ];
 

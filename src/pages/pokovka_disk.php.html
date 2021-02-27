@@ -1,0 +1,187 @@
+
+<!-- saved from url=(0041)http://sibmash55.ru/pokovka_disk.php.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width"> 
+	<link href="./pokovka_disk.php_files/stylecheme.css" rel="stylesheet" type="text/css">
+	<link href="./pokovka_disk.php_files/menu.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="./pokovka_disk.php_files/jquery.min.js.Без названия"></script>
+</head>
+<body><!-- Номер чертежа черным,убрать согласовапнно!поковка(заготовка фланца)ы-->
+	<script>
+		$check = 0;
+		
+		function addnote(Elementadd){
+			if ($check >3 ) {
+				alert ("Максимальное кол-во полей!");
+				}else
+				{
+					$("#note ol").append('<li><label class="del-note" id="del-note" onclick="delnote(this);"></label><textarea></textarea></li>');
+					$check = $check + 1;
+				}			
+		}
+		function delnote(Elementdel){
+			$(Elementdel).parent().remove();
+			$check = $check - 1;
+		}
+		
+	</script>
+	<!--<script>
+		$(document).ready(function(){
+			$("#del-note").click(function() {
+				$(this).parent().remove();
+			});
+		});
+	</script>-->
+	<script>
+		$(document).ready(function(){
+			$(".deviation-plus").keyup(function() {
+				this.style.width = ((this.value.length + 3) * 5) + 'px';
+				var plus = $(this).val();
+				if (plus.length >= 1 ){
+					plus = plus.replace(/\D/g,'');
+					$(this).val(" +"+ plus);
+					$(this).css({'backgroundColor': 'transparent','border':'none'});
+				} else {
+						$(this).val('');
+						$(this).css({'backgroundColor': '#E6E6E6','border':'dotted 1px'});
+					}
+			})
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$(".deviation-minus").keyup(function() {
+				this.style.width = ((this.value.length + 3) * 5) + 'px';
+				var minus = $(this).val();
+				if (minus.length >= 1 ){
+					minus = minus.replace(/\D/g,'');
+					$(this).val("-"+ minus);
+					$(this).css({'backgroundColor': 'transparent','border':'none'});
+				} else {
+						$(this).val('');
+						$(this).css({'backgroundColor': '#E6E6E6','border':'dotted 1px'});
+					}
+			})
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$(".inputsize").keyup(function() {
+				var inputsize = $(this).val(); 
+			this.style.width = ((this.value.length + 1) * 11) + 'px';
+			if(inputsize.length > 0){
+				$(this).css({'backgroundColor': 'transparent','border':'none'});
+			}else{
+				$(this).css({'backgroundColor': '#E6E6E6','border':'dotted 1px'});
+			}
+			})
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			var inptbottom = $("#inpt-bottom-drawing-name").val();
+			$("#inpt-top-drawing-name").val(inptbottom);
+			$("#inpt-bottom-drawing-name").keyup(function() {
+				this.value = this.value.toUpperCase();
+				var text = $("#inpt-bottom-drawing-name").val();
+				$("#inpt-top-drawing-name").val(text);
+			})
+		});
+	</script>
+	<div class="menu">
+	<div class="menu-list">
+		<!--<span><a href="http://zngs.ru/company/addrawing"><img src="images/back.png"></a></span>
+		<span><a href="http://zngs.ru"><img src="images/gohome.jpg"></a></span>-->
+		<button style="float:left;" onclick="location.href=&#39;http://google.ru&#39;">Назад</button>
+		<button style="float:left;margin-left: 15px;" onclick="location.href=&#39;http://google.ru&#39;">На Главную</button>
+		<button style="float:right;" onclick="window.print();">Отправить на печать</button>
+	</div>
+</div><div class="content" id="" style="">
+
+	<div class="drawing" id="drawing" style="">
+		<div class="block-frame" id="">
+			<img src="./pokovka_disk.php_files/drawing-frame.jpg">
+		</div>
+		
+		<div class="block-title-zngs" id="block-title-zngs" style="">
+<!--Добавление блока "блокнот" --><script>
+function enableTab(id) {
+    var el = document.getElementById(id);
+    el.onkeydown = function(e) {
+        if (e.keyCode === 9) {
+            var val = this.value,
+                start = this.selectionStart,
+                end = this.selectionEnd;
+            this.value = val.substring(0, start) + '\t' + val.substring(end);
+            this.selectionStart = this.selectionEnd = start + 1;
+            return false;
+        }
+    };
+};
+</script>
+<div class="block-note" id="block-note">
+			<span id="сoherently">Согласованно:</span>
+				<!--<div class="add-note" id="add-note" onclick="addnote(this);"></div> -->
+				<div class="note" id="note">
+					<textarea id="textarea-id" onkeydown="enableTab(&#39;textarea-id&#39;);">1. Поковка Гр.IV КП245 ГОСТ 8479-70.
+2. Термическая обработка.
+3. Допускается механическая обработка заготовки с припуском 2,5 мм на сторону до чистовых размеров.
+4. УЗК 100%, нормы оценки по ГОСТ 24507-80, группа качества 3n.</textarea>
+				 <!--<ol style="height: 290px;">
+					<li><input maxlength="45"  value="Поковка Гр.IV КП245 ГОСТ 8479-70"></li>
+				</ol>-->
+				</div>
+			</div>			<div class="top-drawing-name" id="top-drawing-name" style=""><input id="inpt-top-drawing-name" value="" maxlength="25"></div>
+			<div class="bottom-drawing-name" id="bottom-drawing-name" style=""><input id="inpt-bottom-drawing-name" value="СибМаш 205.02.04.-01" maxlength="24"></div>
+<!--Добавление блока "логотип" --><div class="title-zngs" id="title-zngs" style=""><img src="./pokovka_disk.php_files/title-new.jpg" width="100"></div>			<div class="mass" id="massID" style="">
+				<input value="" maxlength="5">
+			</div>
+			<div class="label1" id="labelID1" style="">
+				<textarea rows="4" maxlength="62">Диск (заготовка)</textarea>
+			</div>
+			<div class="label2" id="labelID2" style="">
+			<textarea rows="2" maxlength="51">Сталь 09Г2С ГОСТ 19281-2014</textarea>
+			</div>
+			<div class="label3" id="labelID3" style="">
+			<img src="./pokovka_disk.php_files/label3.jpg">
+			<input maxlength="4" value="12.5">
+			</div>
+		</div>
+		
+		
+
+		<div class="block-detail" id="" style="width: 583px;height: 195px;top: 200px;left:130px;">
+				<div class="block-detail-image" id="" style="">
+					<img src="./pokovka_disk.php_files/detail-disk.jpg">
+				</div>
+				
+				<div class="block-detail-size" id="block-detail-size-1" style="left:220px;top: 150px;">
+					<img class="diametr-image" src="./pokovka_disk.php_files/diametr.jpg">
+					<div class="block-fullsize">
+							<input class="inputsize" type="text" id="fullsize" placeholder="" maxlength="4" onkeydown="">
+					</div>
+					<div class="block-deviation" style="">
+							<input class="deviation-plus" type="text" id="deviation-plus" placeholder="" maxlength="3" value="">
+							<input class="deviation-minus" type="text" id="deviation-minus" name="" placeholder="" maxlength="3" value="">
+					</div>
+				</div>
+
+
+				<div class="block-detail-size" id="block-detail-size-2" style="left:500px;top: 30px;-webkit-transform: rotate(-90deg);transform: rotate(-90deg);-moz-transform:rotate(-90deg);-o-transform:rotate(-90deg);-ms-transform: rotate(-90deg);-ms-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);-sand-transform: rotate(90deg);">
+					<div class="block-fullsize">
+							<input class="inputsize" type="text" id="fullsize" placeholder="" maxlength="4" onkeydown="">
+					</div>
+					<div class="block-deviation" style="">
+							<input class="deviation-plus" type="text" id="deviation-plus" placeholder="" maxlength="3" value="">
+							<input class="deviation-minus" type="text" id="deviation-minus" name="" placeholder="" maxlength="3" value="">
+					</div>
+				</div>
+		</div>
+		
+		
+</div>
+<!---webkit-transform: rotate(-90deg); 
+	transform: rotate(-90deg); -->
+	
+</div></body></html>

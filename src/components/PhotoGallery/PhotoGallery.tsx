@@ -27,10 +27,15 @@ const responsive = {
 };
 
 const photos = [
-  { id: 0, photo: `/images/gallery-1.png` },
-  { id: 1, photo: `/images/gallery-2.png` },
-  { id: 2, photo: `/images/gallery-3.png` },
-  { id: 3, photo: `/images/gallery-1.png` },
+  { id: 0, photo: `/images/PressureVessel.jpg` },
+  {
+    id: 1,
+    photo: `/images/tuv-rheinland-asme-boiler-and-pressure-vessel-inspection_core_2_2_1.jpg`,
+  },
+  {
+    id: 2,
+    photo: `/images/tuv-rheinland-production-and-operation-of-pressure-equipment_core_2_2_1.jpg`,
+  },
 ];
 
 const CustomButtonGroupAsArrows = ({ next, previous }: ButtonGroupProps) => (

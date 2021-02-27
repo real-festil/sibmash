@@ -15,12 +15,6 @@ body {
   padding: 0;
   margin: 0;
 }
-ul li :before {
-  content: '-';
-  position: relative;
-
-  left: 5px;
-}
 h3 {
   font-size: 32px;
   font-weight: 400;
@@ -163,4 +157,15 @@ h3 {
 }
 .position:checked ~ .checkmark::after {
   display: block;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  justify-content: space-around;
+  align-items: center;
+  a {
+    color: #fff;
+  }
 }

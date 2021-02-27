@@ -1,0 +1,28 @@
+.menu{
+	width:780px;
+	height:30px;
+	position: relative;
+	margin: 0 auto;
+	margin-top: -10px;
+	border-bottom: 4px solid black;
+	
+	
+}
+
+.menu-list{
+    width:780px;
+	height:30px;
+	position: absolute;
+	bottom: 0;
+}
+
+.menu-list span{
+	margin-left: 15px;
+	font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.menu-list span img{
+	width:25px;
+	height: 25px;
+}
