@@ -11,7 +11,7 @@ const tabs = [
     Применение объёмной штамповки оправдано при массовом производстве.
     При использовании этого способа значительно повышается
     производительность труда, снижаются отходы металла, обеспечиваются высокие точность формы изделия и качество поверхности.
-    МАРКИ СТАЛИ
+    Марки стали:
     Изготавливаем продукцию методом свободной ковки и штамповки из стали 10-
     60, 09Г2С, 30ХМА, 20Х13, 12Х18Н10Т, 10Х17Н13М2Т, 12Х1МФ и др.`,
     image1: `/images/kuz.jpg`,
@@ -100,8 +100,18 @@ const ProdTabs = () => {
             <div className={styles.tabsTabVse}>
               <div className={styles.tabsTabDescription}>{tab.description}</div>
               <div className={styles.tabsTabPhoto}>
-                <img src={tab.image1} />
-                <img src={tab.image2} />
+                <div
+                  style={{
+                    background: `url(${tab.image1})`,
+                    backgroundSize: `cover`,
+                  }}
+                />
+                <div
+                  style={{
+                    background: `url(${tab.image2})`,
+                    backgroundSize: `cover`,
+                  }}
+                />
               </div>
             </div>
           )}

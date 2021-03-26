@@ -137,8 +137,8 @@ const production = [
     пространство от межтрубного.
     ООО «Сибмаш» изготавливает трубные решетки в соответствии с российскими и
     международными стандартами.`,
-    image1: `/images/reshetki/1.png`,
-    image2: `/images/reshetki/2.png`,
+    image1: `/images/reshetki/1.jpg`,
+    image2: `/images/reshetki/2.jpg`,
   },
 ];
 
@@ -157,8 +157,22 @@ const Product: React.FC = () => {
               <div className={styles.productInfo}>
                 <p className={styles.productDesc}>{product.description}</p>
                 <div className={styles.productPhoto}>
-                  <img src={product.image1} />
-                  <img src={product.image2} />
+                  <div
+                    style={{
+                      background: `url(${product.image1})`,
+                      backgroundSize: `cover`,
+                      width: `256px`,
+                      height: `246px`,
+                    }}
+                  />
+                  <div
+                    style={{
+                      background: `url(${product.image2})`,
+                      backgroundSize: `cover`,
+                      width: `256px`,
+                      height: `246px`,
+                    }}
+                  />
                 </div>
               </div>
             </div>

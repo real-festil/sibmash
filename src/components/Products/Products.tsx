@@ -9,13 +9,18 @@ const production = [
   { id: 3, title: `Отводы`, img: `/images/otvody.png`, url: `otvody` },
   { id: 4, title: `Заглушки`, img: `/images/zaglushky.png`, url: `zaglushki` },
   { id: 5, title: `Переходы`, img: `/images/perexody.png`, url: `perexody` },
-  { id: 6, title: `Опоры`, img: `/images/opory.png`, url: `opory` },
+  { id: 6, title: `Опоры`, img: `/images/opory.jpg`, url: `opory` },
   { id: 7, title: `Днища`, img: `/images/dnisha.png`, url: `dnisha` },
-  { id: 8, title: `Прокладки`, img: `/images/prokladki.png`, url: `prokladki` },
+  {
+    id: 8,
+    title: `Прокладки`,
+    img: `/images/prokladki/1.jpg`,
+    url: `prokladki`,
+  },
   {
     id: 9,
     title: `Трубные решетки`,
-    img: `/images/reshetki.png`,
+    img: `/images/reshetki.jpg`,
     url: `reshetki`,
   },
   {

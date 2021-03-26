@@ -30,7 +30,7 @@
     &Photo {
       display: flex;
       flex-direction: column;
-      img {
+      div {
         &:first-child {
           margin-bottom: 61px;
         }
